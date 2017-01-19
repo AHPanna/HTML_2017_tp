@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+    <title>la balise canvas</title>
+  <style>
+body {
+  background: black;
+}
+canvas {
+  background: white;
+}
+  </style>
+  </head>
+<body>
+<canvas id="mon_canvas" width="250" height="140">
+<p>Désolé, votre navigateur ne supporte pas Canvas. Mettez-vous à jour</p>
+</canvas>
+<script>
+var canv1 = document.getElementById('mon_canvas');
+var context1 = canv1.getContext('2d');
+var monimage = new Image();
+monimage.src = 'rostand.jpg';
+monimage.onload = function() {
+context1.drawImage(monimage, 135, 35, 99, 86);
+}
+context1.strokeStyle = "red";
+context1.fillStyle = "red";
+context1.beginPath(); // La bouche, un arc de cercle
+context1.arc(75, 75, 40, 0, Math.PI );
+context1.fill();
+context1.beginPath(); // Le cercle extérieur
+context1.arc(75, 75, 50, 0, Math.PI * 2);
+context1.moveTo(41, 58); // L'oeil gauche
+context1.arc(55, 70, 20, (Math.PI / 180) * 220, (Math.PI / 180) * 320);
+context1.moveTo(81, 58); // L'oeil droit
+context1.arc(95, 70, 20, (Math.PI / 180) * 220, (Math.PI / 180) * 320);
+context1.stroke();
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+    <title>la balise canvas</title>
+  <style>
+body {
+  background: black;
+}
+canvas {
+  background: white;
+}
+  </style>
+  </head>
+<body>
+<canvas id="mon_canvas" width="400" height="150">
+<p>Désolé, votre navigateur ne supporte pas Canvas. Mettez-vous à jour</p>
+</canvas>
+<script>
+
+var canv1 = document.getElementById('mon_canvas');
+var context1 = canv1.getContext('2d');
+
+
+
+
+var gradient = context1.createLinearGradient(0, 0, canv1.width, 0);
+var monimage = new Image();
+monimage.src = 'bandeau.jpg';
+monimage.onload = function() {
+
+context1.drawImage(monimage,0,0,400,150);
+
+
+gradient.addColorStop("0", "magenta");
+gradient.addColorStop("0.5", "blue");
+gradient.addColorStop("1.0", "red");
+context1.fillStyle = gradient;
+context1.font = "bold 22pt Calibri,Geneva,Arial";
+context1.fillText("CIM", 330, 143);
+
+}
+
+
+</script>
+</body>
+</html>

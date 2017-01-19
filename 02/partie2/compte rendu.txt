@@ -1,0 +1,5 @@
+a) l'html suivant dessine un polygone a 5 coter de couleur bleu.
+b) xxxx.moveTo(x,y),elle crée un chemin de plus, du chemin deja crée.
+c)elle commence par crée des points puis les relies, dans l'ordre classer.
+d) cette fois ci en changeants strokeStyle par fillStyle et stroke() par fill(),
+on remarque que le polygone a 5 cotés a changé de l'intérieur en passant bleu.

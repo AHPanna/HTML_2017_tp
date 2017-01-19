@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>la balise canvas</title>
+    <style>
+    body {
+      background: black;
+    }
+    canvas{
+      background: white;
+    }
+    </style>
+  </head>
+  <body>
+    <canvas id="mon_canvas" width="250" height="400">
+      <p> Désolé, votre navigateur ne supporte pas Canvas. Mettez-vous à jour.</p>
+      </canvas>
+
+    <script>
+    var canv1=document.getElementById('mon_canvas');
+    var context1 = canv1.getContext('2d');
+    context1.fillStyle="rgb(23,145,167)";
+    context1.beginPath();
+    context1.moveTo(20,20);
+    context1.lineTo(130,20);
+    context1.lineTo(130,50);
+    context1.lineTo(75,130);
+    context1.lineTo(20,50);
+    context1.closePath();
+    context1.fill();
+
+
+    </script>
+
+  </body>
+</html>
