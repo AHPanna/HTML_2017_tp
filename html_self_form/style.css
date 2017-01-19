@@ -1,0 +1,66 @@
+
+body{
+
+  background: #263238;
+}
+
+#form {
+  background: url("./img/bg.jpeg") no-repeat;
+
+  border			:	1px solid black;
+  border-radius	:	5px;
+  height: 400px;
+  width			:	400px;
+  margin			:	auto;
+  color			:	white;
+  font-family		:	Helvetica ,fantasy, comic sans ms;
+  font-size		:	15px;
+  padding-top		: 	10px;
+  padding-bottom	: 	10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-size:cover;
+
+
+}
+
+label{
+	display			:	inline-block;
+	width			:	150px;
+	margin-left		:	20px;
+	margin-bottom	: 	0px;
+	vertical-align	: 	top;
+
+}
+input{
+
+	width			:	180px;
+	margin-left		:	10px;
+	vertical-align	: top;
+	border-radius	:	5px;
+	margin-bottom	:	5px;
+	border			:	1px solid black;
+	padding			:	5px;
+  	border			: 	1px solid black;
+}
+
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('polices/dayrom.woff') format('woff'),
+         url('polices/dayrom.ttf') format('truetype'),
+         url('polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+input[type="submit"]{
+	display			:	inline-block;
+	margin-left		:	280px;
+	margin-top		:	10px;
+
+	width			:	100px;
+	color			:	black;
+}

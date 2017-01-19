@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Premier Programme</title>
+	<style>
+	.fond_bleu{
+		background: blue;
+		color: white;
+	}
+	.fond_rouge{
+	background: red;
+	color: white;
+	}
+	</style>
+  </head>
+  <body>
+  
+	<div id ="mon_text">
+	<p> Un peu de texte <a> et un lien </a> </p>
+	</div>
+	<script>
+	var texte = document.getElementById('mon_text');
+	if(confirm('voulez-vous un changement de couleur?')){
+		texte.className='fond_bleu';
+		
+	}else {
+		texte.className='fond_rouge';
+	}
+	
+	</script>
+	</body>
+	</html>

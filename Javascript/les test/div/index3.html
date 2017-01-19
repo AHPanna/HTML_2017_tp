@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Premier Programme</title>
+  </head>
+  <body>
+	
+	<br/><br/>
+	<a id="monlien" href="http://lycee-jeanrostand.fr/">Le lien sue lequel cliquer</a>
+	
+	<script>
+	if (confirm('si vous êtes des eleves en BTS SNIR 1 ou BTS SNIR 2,cliquer sur "OK".'))
+{
+		alert('vous allez pouvoir cliquer sur le lien pour aller vers le site qui vous correspond.');
+		var le_lien = document.getElementById('monlien');
+		var href = le_lien.getAttribute('href');
+		le_lien.setAttribute('href', 'https://openclassrooms.com/courses/apprenez-a-coder-avec-javascript');
+	}
+	else {
+		alert("Vous allez pouvoir cliquer sur le lien pour aller vers le site du lycée.");
+	}
+	</script>
+  </body>
+  </html>

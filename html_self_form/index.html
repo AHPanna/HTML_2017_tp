@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" />
+    <title>Formulaire D'information</title>
+  </head>
+
+  <body>
+    <div id="form">
+      <label for="nom">Nom</label> <span>:</span> <input id="nom" name="nom" type="text" size="30" placeholder="John" Maxlenght="10" autofocus required/>
+      <label for="nom">Prenom</label> <span>:</span> <input id="prenom" name="pre" type="text" size="30" placeholder="Doe" Maxlenght="10" autofocus required/>
+      <label for="Division">Division </label><span>:</span>
+				<select name="Division" id="Division" value="none">
+						<optgroup label="Division">
+							<option value="BTS1">BTS SNIR 1</option>
+							<option value="BTS2">BTS SNIR 2</option>
+              <option value="BTS1_1">BTS CIM 1</option>
+							<option value="BTS2_2">BTS CIM 2</option>
+						</optgroup>
+            </select>
+      	<label for="age">Age</label><span>:</span><input id="age" name="age" type="number"/>
+        <label for="mail">Mail</label><span>:</span><input id="mail" name="mail" type="email" placeholder="johnDoe@email.com" required/>
+        <input type="submit" value="Envoyer!"/>
+
+
+
+
+    </div>
+
+  </body>
+</html>
