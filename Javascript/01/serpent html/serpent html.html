@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<title>serpent</title>
+<head>
+<link rel="stylesheet" href="res/k_serpent.css"type="text/css" />
+<script type="text/javascript" src="res/k_serpent.js"></script>
+</head>
+<body>
+
+ <div id='dvg_jeux'>
+<div id='dg_point'>
+	 <span id='point'>0</span>
+  </div>
+  
+ <div id='menu'>
+ <div onclick='init_serpent()' >commencer</div>
+ 
+ </div>
+ 
+</div>
+</body>
+</html>
