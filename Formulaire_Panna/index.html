@@ -1,0 +1,62 @@
+<!--
+#auteur : ABDUL HAKIM Panna
+#11/01/2017
+# twitter @AH_Panna
+#eleve de BTS SNIR 1 2016-2017 Lycée Jean Rostand, Villepinte.
+# Projet : Formulaire
+# (c) MIT LICENCE
+-->
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+<script type="text/javascript" src="js.js"></script>
+  <title>Formulaire V.2</title>
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+<div id="box" class="box blurred-bg tinted">
+  <div class="content">
+
+<label for="pseudo">Login</label><span>:</span><input id="pseudo" name="pseudo" type="text"  placeholder="Harambe" onblur="login(this);"/>
+
+<label for="pass">Mot de passe</label><span>:</span><input id="pass" name="pass" type="password" onblur="mdp(this);"/>
+
+   <label for="nom">Nom</label> <span>:</span> <input id="nom" name="nom" type="text" placeholder="John" onblur="nom(this);"/>
+
+   <label for="nom">Prenom</label> <span>:</span> <input id="prenom" name="pre" type="text"  placeholder="Doe"onblur="prenom(this);"/>
+
+     <label for="age">Age</label><span>:</span><input id="age" name="age" type="number" onblur="age(this);"/>
+
+     <label for="mail">Mail</label><span>:</span><input id="mail" name="mail" type="email" placeholder="johnDoe@email.com" onblur="email(this);"/>
+
+    <label for="dateNaissance">Date de naissance</label><span>:</span><input id="day" name="dateNaissance" type="date" onblur="day();"/>
+
+<label for="Division">Division </label><span>:</span>
+    <select name="Division" id="Division" value="none">
+        <optgroup label="Division">
+          <option value="BTS1">BTS SNIR 1</option>
+          <option value="BTS2">BTS SNIR 2</option>
+          <option value="BTS1_1">BTS CIM 1</option>
+          <option value="BTS2_2">BTS CIM 2</option>
+        </optgroup>
+        </select> </br>
+
+<label for="textarea1">Commentaire</label><span>:</span><textarea name="textarea1" id="textarea1" rows="2" cols="2" >...</textarea>
+
+
+     <input id="button"  type="submit" value="Envoyer!" />
+
+  </div>
+
+</div>
+
+</body>
+
+
+</html>
