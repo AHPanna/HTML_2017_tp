@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+<script type="text/javascript" src="myjavascript.js"></script>
+
+        <title>Zozor - Formulaire</title>
+
+</head>
+<body>
+	<form method="post" >
+		<div id="MyPage">
+			<h1>formulaire d'inscription</h1>
+			<label for="pseudo">Login</label><span>:</span><input id="pseudo" name="pseudo" type="text" size="30" placeholder="Mohamed" Maxlenght="10" autofocus required/>
+
+
+			<label for="pass">Mot de passe</label><span>:</span><input id="pass" name="pass" type="password" size="30"  Maxlenght="8" required/>
+
+
+			<label for="textarea1">Commentaire</label><span>:</span><textarea name="textarea1" id="textarea1" rows="2" cols="2" >...</textarea>
+
+
+			<label for="mail">Mail</label><span>:</span><input id="mail" name="mail" type="email" placeholder="exemple@mail.com" onblur="email_c(mail);"required/>
+
+   <label for="age">Age</label><span>:</span><input id="age" name="age" type="number" onblur="age_c(age);"/>
+<!--
+			<label for="age">Age</label><span>:</span><input id="age" name="age" type="number" onblur="age(this);"/>
+-->
+
+			<label for="day">Date de naissance</label><span>:</span><input id="day" name="day" type="day" onblur="day_c();"/></br>
+
+
+			<label for="nationalite">Nationalité</label><span>:</span>
+				<select name="nationalite" id="nationalite" value="none">
+						<optgroup label="Europe">
+							<option value="française">Française</option>
+							<option value="Espgnole">Espagnole</option>
+							<option value="italienne">italienne</option>
+						</optgroup>
+						<optgroup label="Maghreb">
+							<option value="Marocaine">Marocaine</option>
+							<option value="Algerienne">Algerienne</option>
+							<option value="Tunisinne">Tunisienne</option>
+					</optgroup>
+				</select>
+
+
+			<input type="submit" value="Envoyer!"/>
+		</div>
+<h2 id='result'></h2>
+	</form>
+</body>
+</html>
